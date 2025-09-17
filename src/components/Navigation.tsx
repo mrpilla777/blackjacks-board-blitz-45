@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Menu, X, Trophy } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,25 +26,8 @@ const Navigation = () => {
             <span className="font-playfair font-bold text-xl">Blackjacks Chess Club</span>
           </NavLink>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
-            {navItems.map((item) => (
-              <NavLink
-                key={item.name}
-                to={item.path}
-                className={({ isActive }) =>
-                  `px-3 py-2 text-sm font-medium transition-colors hover:text-accent ${
-                    isActive ? "text-accent border-b-2 border-accent" : "text-chess-white"
-                  }`
-                }
-              >
-                {item.name}
-              </NavLink>
-            ))}
-          </div>
-
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* Hamburger menu button - now for all devices */}
+          <div>
             <Button
               variant="ghost"
               size="sm"
@@ -55,24 +39,27 @@ const Navigation = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Navigation Menu - now available for all devices */}
         {isOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-chess-black/95 border-t border-accent/20">
-              {navItems.map((item) => (
-                <NavLink
-                  key={item.name}
-                  to={item.path}
-                  className={({ isActive }) =>
-                    `block px-3 py-2 text-base font-medium transition-colors hover:text-accent ${
-                      isActive ? "text-accent bg-accent/10" : "text-chess-white"
-                    }`
-                  }
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </NavLink>
-              ))}
+          <div className="absolute top-16 left-0 w-full bg-cover bg-center bg-no-repeat" 
+               style={{ backgroundImage: `url(${heroBg})` }}>
+            <div className="bg-chess-black/95 backdrop-blur-sm min-h-screen">
+              <div className="px-6 pt-8 pb-6 space-y-4">
+                {navItems.map((item) => (
+                  <NavLink
+                    key={item.name}
+                    to={item.path}
+                    className={({ isActive }) =>
+                      `block px-6 py-4 text-2xl font-medium transition-colors hover:text-accent border-b border-accent/20 ${
+                        isActive ? "text-accent bg-accent/10" : "text-chess-white"
+                      }`
+                    }
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </NavLink>
+                ))}
+              </div>
             </div>
           </div>
         )}

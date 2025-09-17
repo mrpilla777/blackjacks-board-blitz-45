@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import AchievementsSection from "@/components/AchievementsSection";
 import NewsPreview from "@/components/NewsPreview";
+import PagePreviews from "@/components/PagePreviews";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -10,6 +11,7 @@ const Index = () => {
       <Navigation />
       <HeroSection />
       <AchievementsSection />
+      <PagePreviews />
       <NewsPreview />
       <Footer />
     </div>

@@ -2,6 +2,7 @@ import { Brain, Target, Zap, Trophy } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import sectionBg from "@/assets/section-bg.jpg";
 
 const Puzzles = () => {
   const puzzleCategories = [
@@ -37,12 +38,14 @@ const Puzzles = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-gradient-to-b from-muted to-background">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-playfair text-4xl md:text-6xl font-bold mb-6">
+      <section className="pt-20 pb-16 bg-cover bg-center bg-no-repeat relative" 
+               style={{ backgroundImage: `url(${sectionBg})` }}>
+        <div className="absolute inset-0 bg-chess-black/70"></div>
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="font-playfair text-4xl md:text-6xl font-bold mb-6 text-chess-white">
             Sharpen Your Mind With <span className="text-accent">Daily Puzzles</span>
           </h1>
-          <p className="text-xl text-muted-foreground leading-relaxed">
+          <p className="text-xl text-gray-300 leading-relaxed">
             Challenge yourself with tactical puzzles designed by chess masters
           </p>
         </div>
@@ -101,20 +104,20 @@ const Puzzles = () => {
               </p>
             </div>
 
-            {/* Lichess TV Embed */}
+            {/* Lichess Training Embed */}
             <div className="max-w-lg mx-auto mb-8">
               <div className="rounded-lg shadow-gold overflow-hidden">
                 <iframe 
-                  src="https://lichess.org/tv/frame?theme=brown&bg=dark" 
+                  src="https://lichess.org/training/frame?theme=brown&bg=dark" 
                   style={{width: "400px", aspectRatio: "10/11"}} 
                   allowTransparency={true} 
                   frameBorder="0"
                   className="mx-auto block"
-                  title="Lichess TV - Live Chess Games"
+                  title="Lichess Training - Tactical Puzzles"
                 />
               </div>
               <p className="text-center text-sm text-gray-300 mt-4">
-                Watch live games from top players around the world
+                Solve tactical puzzles to improve your chess skills
               </p>
             </div>
 

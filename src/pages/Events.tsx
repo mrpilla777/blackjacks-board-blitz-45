@@ -3,6 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import sectionBg from "@/assets/section-bg.jpg";
 
 const Events = () => {
   const [selectedFilter, setSelectedFilter] = useState("All");
@@ -19,7 +20,7 @@ const Events = () => {
     },
     {
       title: "Cape Town Chess Federation Club League 2025 - Rounds 9 & 10",
-      date: "December 21, 2024",
+      date: "September 20, 2025",
       time: "09:00 - 17:00",
       location: "Various Venues",
       type: "Club League Games",
@@ -27,26 +28,17 @@ const Events = () => {
       featured: true
     },
     {
-      title: "Cape Town Chess Federation Club League 2025 - Rounds 11 & 12",
-      date: "December 28, 2024",
+      title: "Cape Town Chess Federation Club League 2025 - Round 11",
+      date: "September 27, 2025",
       time: "09:00 - 17:00",
       location: "Various Venues",
       type: "Club League Games",
-      description: "Classical format: 90 minutes per side + 30 second increment. Crucial rounds for championship.",
-      featured: true
-    },
-    {
-      title: "Cape Town Chess Federation Club League 2025 - Rounds 13 & 14",
-      date: "January 4, 2025",
-      time: "09:00 - 17:00",
-      location: "Various Venues",
-      type: "Club League Games",
-      description: "Classical format: 90 minutes per side + 30 second increment. Final championship rounds.",
+      description: "Classical format: 90 minutes per side + 30 second increment. Crucial round for championship.",
       featured: true
     },
     {
       title: "African Chess Junior Championship 2025",
-      date: "February 15-25, 2025",
+      date: "September 17-23, 2025",
       time: "09:00 - 18:00",
       location: "TBA",
       type: "Tournaments",
@@ -54,12 +46,21 @@ const Events = () => {
       featured: true
     },
     {
-      title: "Monthly Club Tournament",
-      date: "January 25, 2025",
+      title: "The Parow Civic Chess Tournament",
+      date: "October 9, 2025",
+      time: "09:00 - 17:00",
+      location: "Parow Civic Centre",
+      type: "Tournaments",
+      description: "An annual tournament where all the libraries clash together in a battle to come out on top. Blackjacks will be representing Parow Library.",
+      featured: true
+    },
+    {
+      title: "Parow Library Tournament",
+      date: "July 11, 2026",
       time: "09:00 - 17:00",
       location: "Parow Library",
       type: "Tournaments",
-      description: "Monthly club championship with prizes for top performers in all divisions."
+      description: "A yearly tournament where the top 10 players qualify to represent Parow Library at the Parow Civic Tournament."
     }
   ];
 
@@ -99,12 +100,14 @@ const Events = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-gradient-to-b from-muted to-background">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-playfair text-4xl md:text-6xl font-bold mb-6">
+      <section className="pt-20 pb-16 bg-cover bg-center bg-no-repeat relative" 
+               style={{ backgroundImage: `url(${sectionBg})` }}>
+        <div className="absolute inset-0 bg-chess-black/70"></div>
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="font-playfair text-4xl md:text-6xl font-bold mb-6 text-chess-white">
             Upcoming <span className="text-accent">Events</span>
           </h1>
-          <p className="text-xl text-muted-foreground leading-relaxed">
+          <p className="text-xl text-gray-300 leading-relaxed">
             Join us for tournaments, practice sessions, and community gatherings
           </p>
         </div>
