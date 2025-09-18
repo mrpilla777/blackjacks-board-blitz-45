@@ -9,6 +9,7 @@ const Navigation = () => {
 
   const navItems = [
     { name: "Home", path: "/" },
+    { name: "Academy", path: "/academy" },
     { name: "About", path: "/about" },
     { name: "News", path: "/news" },
     { name: "Events", path: "/events" },
@@ -23,7 +24,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           <NavLink to="/" className="flex items-center space-x-2 group">
             <Trophy className="h-8 w-8 text-accent transition-transform group-hover:scale-110" />
-            <span className="font-playfair font-bold text-xl">Blackjacks Chess Club</span>
+            <span className="font-playfair font-bold text-xl">Blackjacks Chess Academy</span>
           </NavLink>
 
           {/* Hamburger menu button - now for all devices */}

@@ -37,20 +37,39 @@ const Members = () => {
   ];
 
   const players = [
+    // A Team
     {
-      name: "JM Charlton Mnysta",
-      role: "Junior Master",
-      level: "Junior Master",
+      name: "NM Charlton Mnyasta",
+      role: "National Master",
+      level: "National Master",
       achievements: ["Cape Town League Champion", "Regional Master"],
       team: "A",
       international: true,
       image: "/placeholder.svg"
     },
     {
-      name: "Tezihano Mnysta",
-      role: "Senior Player",
-      level: "Expert",
+      name: "JM Raynier Claassen",
+      role: "Junior Master",
+      level: "Junior Master",
       achievements: ["Club Champion", "Tournament Winner"],
+      team: "A",
+      national: true,
+      image: "/placeholder.svg"
+    },
+    {
+      name: "RM Tezihano Mnyasta",
+      role: "Regional Master",
+      level: "Regional Master",
+      achievements: ["Regional Tournament Winner", "Club Champion"],
+      team: "A",
+      national: true,
+      image: "/placeholder.svg"
+    },
+    {
+      name: "RM Michael James",
+      role: "Regional Master",
+      level: "Regional Master",
+      achievements: ["Regional Competitor", "Tournament Winner"],
       team: "A",
       national: true,
       image: "/placeholder.svg"
@@ -65,28 +84,240 @@ const Members = () => {
       image: "/placeholder.svg"
     },
     {
-      name: "Raynier Claasen",
-      role: "Senior Player",
+      name: "Cherwin Chanson Kleinsmidt",
+      role: "Team Player",
       level: "Expert",
-      achievements: ["Regional Tournament Winner", "Club Champion"],
+      achievements: ["A Team Regular", "Tournament Competitor"],
       team: "A",
       national: true,
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Jamie Morne Geduld",
+      role: "Team Player",
+      level: "Expert",
+      achievements: ["A Team Regular", "Tactical Specialist"],
+      team: "A",
+      national: true,
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Sean Kudzai Chironda",
+      role: "Team Player",
+      level: "Expert",
+      achievements: ["A Team Regular", "Tactical Specialist"],
+      team: "A",
+      national: true,
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Clayden Taute",
+      role: "Team Player",
+      level: "Expert",
+      achievements: ["A Team Regular", "Multi-team Player"],
+      team: "A",
+      teamNote: "Also in B Team",
+      national: true,
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Llewellyn Theod Louw",
+      role: "President",
+      level: "Expert",
+      achievements: ["Club Leadership Excellence", "Strategic Development"],
+      team: "A",
+      teamNote: "Also in B Team",
+      international: true,
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Victor Meiring",
+      role: "Team Player",
+      level: "Expert",
+      achievements: ["A Team Regular", "Multi-team Player"],
+      team: "A",
+      teamNote: "Also in B Team",
+      national: true,
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Willmore Pietersen",
+      role: "Vice President",
+      level: "Expert",
+      achievements: ["Tournament Coordination", "Member Development"],
+      team: "A",
+      teamNote: "Also in B Team",
+      national: true,
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Theodor Thys Mentoor",
+      role: "Team Player",
+      level: "Expert",
+      achievements: ["A Team Regular", "Multi-team Player"],
+      team: "A",
+      teamNote: "Also in B Team",
+      national: true,
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Rudy Trevor Koopstadt",
+      role: "Team Player",
+      level: "Expert",
+      achievements: ["A Team Regular", "Multi-team Player"],
+      team: "A",
+      teamNote: "Also in B Team",
+      national: true,
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Warren Galant",
+      role: "Team Player",
+      level: "Expert",
+      achievements: ["A Team Regular", "Tournament Competitor"],
+      team: "A",
+      national: true,
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Ettiene Kapp",
+      role: "Team Player",
+      level: "Expert",
+      achievements: ["A Team Regular", "Tournament Competitor"],
+      team: "A",
+      national: true,
+      image: "/placeholder.svg"
+    },
+    // B Team Players (additional to A team)
+    {
+      name: "Lezerick Cunningham",
+      role: "Chairperson",
+      level: "Expert",
+      achievements: ["Administrative Leadership", "Community Development"],
+      team: "B",
+      teamNote: "Also in C Team",
+      national: true,
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Shaheed Tobias",
+      role: "Team Player",
+      level: "Class A Player",
+      achievements: ["B Team Regular", "Tournament Player"],
+      team: "B",
+      club: true,
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Donvito Mintoor",
+      role: "Team Player",
+      level: "Class A Player",
+      achievements: ["B Team Regular", "Multi-team Player"],
+      team: "B",
+      teamNote: "Also in C Team",
+      club: true,
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Jovanne Herder",
+      role: "Team Player",
+      level: "Class A Player",
+      achievements: ["B Team Regular", "Multi-team Player"],
+      team: "B",
+      teamNote: "Also in C Team",
+      club: true,
       image: "/placeholder.svg"
     },
     {
       name: "Prince Ngombo",
       role: "Team Player",
       level: "Class A Player",
-      achievements: ["B Team Captain", "Local Tournament Winner"],
+      achievements: ["B Team Captain", "Multi-team Player"],
       team: "B",
+      teamNote: "Also in C Team",
       club: true,
       image: "/placeholder.svg"
     },
     {
-      name: "David Pengele",
+      name: "Mziwandile Links",
+      role: "Team Player",
+      level: "Class A Player",
+      achievements: ["B Team Regular", "Multi-team Player"],
+      team: "B",
+      teamNote: "Also in C Team",
+      club: true,
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Keenan Pharo",
+      role: "Team Player",
+      level: "Class A Player",
+      achievements: ["B Team Regular", "Multi-team Player"],
+      team: "B",
+      teamNote: "Also in C Team",
+      club: true,
+      image: "/placeholder.svg"
+    },
+    {
+      name: "David Renyele",
+      role: "Team Player",
+      level: "Class A Player",
+      achievements: ["B Team Regular", "Tournament Player"],
+      team: "B",
+      club: true,
+      image: "/placeholder.svg"
+    },
+    // C Team Players (additional to B team)
+    {
+      name: "Elihle Nzimande",
       role: "Team Player",
       level: "Class B Player",
-      achievements: ["Club Tournament Finalist", "Training Excellence"],
+      achievements: ["C Team Regular", "Rising Talent"],
+      team: "C",
+      club: true,
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Keshe Fillies",
+      role: "Team Player",
+      level: "Class B Player",
+      achievements: ["C Team Regular", "Youth Development"],
+      team: "C",
+      club: true,
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Mboyo Belesi Pengele",
+      role: "Team Player",
+      level: "Class B Player",
+      achievements: ["C Team Regular", "Training Excellence"],
+      team: "C",
+      club: true,
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Naydene Williams",
+      role: "Team Player",
+      level: "Class B Player",
+      achievements: ["C Team Regular", "Consistent Performance"],
+      team: "C",
+      club: true,
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Davian Mintoor",
+      role: "Team Player",
+      level: "Class B Player",
+      achievements: ["C Team Regular", "Youth Talent"],
+      team: "C",
+      club: true,
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Fabian Botes",
+      role: "Team Player",
+      level: "Class B Player",
+      achievements: ["C Team Regular", "Developing Player"],
       team: "C",
       club: true,
       image: "/placeholder.svg"
@@ -99,26 +330,10 @@ const Members = () => {
       team: "C",
       club: true,
       image: "/placeholder.svg"
-    },
-    {
-      name: "Sean Kudzai",
-      role: "Team Player",
-      level: "Expert",
-      achievements: ["A Team Regular", "Tactical Specialist"],
-      team: "A",
-      national: true,
-      image: "/placeholder.svg"
     }
   ];
 
-  const additionalPlayers = [
-    { name: "Michael Chen", team: "B", level: "Class A Player", club: true, image: "/placeholder.svg", role: "Team Player", achievements: ["Consistent Performance", "Team Support"], international: false, national: false },
-    { name: "Sarah Williams", team: "B", level: "Expert", national: true, image: "/placeholder.svg", role: "Team Player", achievements: ["Regional Competitor", "Strategic Play"], international: false, club: false },
-    { name: "Ahmed Hassan", team: "C", level: "Class B Player", club: true, image: "/placeholder.svg", role: "Team Player", achievements: ["Rising Talent", "Dedicated Training"], international: false, national: false },
-    { name: "Lisa Johnson", team: "C", level: "Class A Player", club: true, image: "/placeholder.svg", role: "Team Player", achievements: ["Tournament Participant", "Skill Development"], international: false, national: false },
-    { name: "Robert Taylor", team: "A", level: "Expert", national: true, image: "/placeholder.svg", role: "Team Player", achievements: ["National Competitor", "Tactical Excellence"], international: false, club: false },
-    { name: "Maria Garcia", team: "B", level: "Class A Player", club: true, image: "/placeholder.svg", role: "Team Player", achievements: ["Club Regular", "Improvement Focus"], international: false, national: false }
-  ];
+  const additionalPlayers: any[] = [];
 
   const getMemberBadge = (member: any) => {
     if (member.international) {
@@ -316,6 +531,9 @@ const Members = () => {
                     {member.team && (
                       <div className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium border ${getTeamColor(member.team)} mb-3`}>
                         Team {member.team}
+                        {member.teamNote && (
+                          <span className="ml-1 text-xs opacity-75">({member.teamNote})</span>
+                        )}
                       </div>
                     )}
 
@@ -334,26 +552,13 @@ const Members = () => {
             })}
           </div>
 
-          {/* See More Button */}
-          {!showAllPlayers && (
-            <div className="text-center mt-8">
-              <Button 
-                className="btn-hero"
-                onClick={() => setShowAllPlayers(true)}
-              >
-                <Users className="h-4 w-4 mr-2" />
-                See the Rest ({additionalPlayers.length} more players)
-              </Button>
-            </div>
-          )}
-
           {/* Stats Section */}
           <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center championship-card bg-accent/5 border-accent">
               <div className="w-16 h-16 mx-auto mb-4 bg-accent rounded-full flex items-center justify-center">
                 <Globe className="h-8 w-8 text-accent-foreground" />
               </div>
-              <h3 className="font-playfair text-2xl font-bold gold-accent mb-2">3</h3>
+              <h3 className="font-playfair text-2xl font-bold gold-accent mb-2">2</h3>
               <p className="text-muted-foreground">International Representatives</p>
             </div>
             
@@ -361,7 +566,7 @@ const Members = () => {
               <div className="w-16 h-16 mx-auto mb-4 bg-gold rounded-full flex items-center justify-center">
                 <Star className="h-8 w-8 text-gold-foreground" />
               </div>
-              <h3 className="font-playfair text-2xl font-bold gold-accent mb-2">8</h3>
+              <h3 className="font-playfair text-2xl font-bold gold-accent mb-2">16</h3>
               <p className="text-muted-foreground">National Level Players</p>
             </div>
             
@@ -369,7 +574,7 @@ const Members = () => {
               <div className="w-16 h-16 mx-auto mb-4 bg-muted rounded-full flex items-center justify-center">
                 <Trophy className="h-8 w-8 text-muted-foreground" />
               </div>
-              <h3 className="font-playfair text-2xl font-bold gold-accent mb-2">30+</h3>
+              <h3 className="font-playfair text-2xl font-bold gold-accent mb-2">33</h3>
               <p className="text-muted-foreground">Active Club Members</p>
             </div>
           </div>

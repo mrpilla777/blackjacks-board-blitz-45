@@ -2,7 +2,9 @@ import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import AchievementsSection from "@/components/AchievementsSection";
 import NewsPreview from "@/components/NewsPreview";
-import PagePreviews from "@/components/PagePreviews";
+import ChampionshipSection from "@/components/ChampionshipSection";
+import CoachesPreview from "@/components/CoachesPreview";
+import EventsPreview from "@/components/EventsPreview";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -10,8 +12,9 @@ const Index = () => {
     <div className="min-h-screen">
       <Navigation />
       <HeroSection />
-      <AchievementsSection />
-      <PagePreviews />
+      <ChampionshipSection />
+      <CoachesPreview />
+      <EventsPreview />
       <NewsPreview />
       <Footer />
     </div>
