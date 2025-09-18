@@ -8,21 +8,21 @@ const CoachesPreview = () => {
       name: "Lewellyn Louw",
       role: "President & Head Coach",
       level: "Expert",
-      image: "/placeholder.svg",
+      image: "/blackjacks-logo.png",
       international: true
     },
     {
       name: "Lezerick Cunningham",
       role: "Chairperson",
       level: "Expert", 
-      image: "/placeholder.svg",
+      image: "/blackjacks-logo.png",
       national: true
     },
     {
       name: "Willmore Pieterson",
       role: "Vice President",
       level: "Expert",
-      image: "/placeholder.svg",
+      image: "/blackjacks-logo.png",
       national: true
     }
   ];

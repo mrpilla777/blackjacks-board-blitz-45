@@ -5,30 +5,59 @@ import { Button } from "@/components/ui/button";
 import sectionBg from "@/assets/section-bg.jpg";
 
 const Academy = () => {
+  const leaders = [
+    {
+      name: "Llewelyn Louw",
+      title: "Founder of the Academy",
+      credentials: "President of Cape Town Chess Federation, FIDE-Certified Tournament Organiser, National Arbiter",
+      specializations: ["Academy Leadership", "Tournament Organization", "Strategic Development"],
+      achievements: ["Founded Blackjacks Chess Academy", "President of Cape Town Chess Federation", "FIDE-Certified Tournament Organiser", "National Arbiter"],
+      image: "/blackjacks-logo.png",
+      isFounder: true
+    }
+  ];
+
   const coaches = [
     {
-      name: "Lewellyn Louw",
-      title: "Head Coach & Academy Director",
-      credentials: "Expert Level Coach, Club President",
-      specializations: ["Advanced Strategy", "Tournament Preparation", "Master-level Coaching"],
-      achievements: ["Trained multiple national representatives", "20+ years coaching experience", "Expert-level player"],
-      image: "/placeholder.svg"
+      name: "Charlton Mnyasta",
+      title: "Elite Performance Coach",
+      credentials: "FIDE Rated Player (2172), National Representative",
+      specializations: ["Elite Training", "International Competition Preparation", "Advanced Strategy"],
+      achievements: ["Chess Olympiad Team Member (2024, Hungary)", "Represented SA at World Junior Championship (India)", "Represented SA at African Junior Championship (Egypt)", "Top 4 in South African Closed Championships"],
+      image: "/blackjacks-logo.png",
+      rating: 2172
     },
     {
-      name: "Lezerick Cunningham", 
-      title: "Senior Chess Instructor",
-      credentials: "Expert Level Player, Club Chairperson",
-      specializations: ["Youth Development", "Beginner to Intermediate Training", "Administrative Excellence"],
-      achievements: ["Developed successful junior programs", "Club leadership excellence", "Community development focus"],
-      image: "/placeholder.svg"
+      name: "Jiraan Braaf", 
+      title: "Youth Development Coach",
+      credentials: "Regional Champion, Youth Specialist",
+      specializations: ["Youth Development", "School Chess Programs", "Regional Competitions"],
+      achievements: ["Regional Champion", "Multiple top finishes in Western Cape events", "Experienced in coaching school teams", "Youth talent development specialist"],
+      image: "/blackjacks-logo.png"
     },
     {
-      name: "Willmore Pieterson",
-      title: "Technical Coach",
-      credentials: "Expert Level Player, Vice President",
-      specializations: ["Technical Training", "Competition Preparation", "Player Development"],
-      achievements: ["Tournament coordination expertise", "Advanced player mentoring", "Strategic development specialist"],
-      image: "/placeholder.svg"
+      name: "Tezihano Mnyasta",
+      title: "Junior Champion Coach",
+      credentials: "Junior Champion, Tactical Specialist",
+      specializations: ["Junior Training", "Tactical Analysis", "Competition Psychology"],
+      achievements: ["Junior Champion", "SAJCC Representative for his district", "Tactical training specialist", "Youth competition expert"],
+      image: "/blackjacks-logo.png"
+    },
+    {
+      name: "Wilmore Pietersen",
+      title: "Youth Mentor & Coach",
+      credentials: "Experienced Coach, Community Outreach Specialist",
+      specializations: ["Youth Mentoring", "Grassroots Development", "Community Programs"],
+      achievements: ["Experienced coaching background", "Strong grassroots chess outreach", "Youth mentor and guide", "Community development focus"],
+      image: "/blackjacks-logo.png"
+    },
+    {
+      name: "Cherwin Kleinsmidt",
+      title: "Senior Strategic Coach",
+      credentials: "Senior Player, Positional Expert",
+      specializations: ["Positional Play", "Strategic Planning", "Advanced Technique"],
+      achievements: ["Positional Play Expert", "Top performer in Western Cape Club events", "League tournament specialist", "Strategic development coach"],
+      image: "/blackjacks-logo.png"
     }
   ];
 
@@ -130,9 +159,62 @@ const Academy = () => {
         </div>
       </section>
 
-      {/* Expert Coaches */}
+      {/* Academy Leadership */}
       <section className="py-16 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-playfair text-3xl md:text-4xl font-bold mb-4">
+              Academy <span className="text-accent">Leadership</span>
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Founding visionaries driving chess excellence in Cape Town
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 max-w-md mx-auto mb-20">
+            {leaders.map((leader, index) => (
+              <div key={index} className="championship-card group bg-accent/5 border-accent">
+                <div className="text-center">
+                  <div className="relative mb-6">
+                    <div className="w-40 h-40 mx-auto rounded-full bg-muted border-4 border-accent overflow-hidden">
+                      <img
+                        src={leader.image}
+                        alt={leader.name}
+                        className="w-full h-full object-contain p-4"
+                      />
+                    </div>
+                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                      <Crown className="h-10 w-10 text-accent" />
+                    </div>
+                  </div>
+
+                  <h3 className="font-playfair text-2xl font-bold mb-2">{leader.name}</h3>
+                  <p className="text-accent font-bold text-lg mb-3">{leader.title}</p>
+                  <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{leader.credentials}</p>
+                  
+                  <div className="text-left space-y-2 mb-4">
+                    <h4 className="font-semibold text-sm">Leadership Focus:</h4>
+                    {leader.specializations.map((spec, idx) => (
+                      <div key={idx} className="text-xs text-muted-foreground flex items-center">
+                        <Star className="h-3 w-3 text-accent mr-2" />
+                        {spec}
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="text-left space-y-1">
+                    <h4 className="font-semibold text-sm">Key Achievements:</h4>
+                    {leader.achievements.map((achievement, idx) => (
+                      <div key={idx} className="text-xs text-muted-foreground">
+                        • {achievement}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
           <div className="text-center mb-16">
             <h2 className="font-playfair text-3xl md:text-4xl font-bold mb-4">
               Expert <span className="text-accent">Coaching Staff</span>
@@ -142,7 +224,7 @@ const Academy = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {coaches.map((coach, index) => (
               <div key={index} className="championship-card group bg-accent/5 border-accent">
                 <div className="text-center">
@@ -151,9 +233,14 @@ const Academy = () => {
                       <img
                         src={coach.image}
                         alt={coach.name}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain p-2"
                       />
                     </div>
+                    {coach.rating && (
+                      <div className="absolute -top-2 -right-2 bg-accent text-accent-foreground text-xs font-bold px-2 py-1 rounded-full border-2 border-background">
+                        {coach.rating}
+                      </div>
+                    )}
                     <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
                       <Crown className="h-8 w-8 text-accent" />
                     </div>
@@ -175,11 +262,16 @@ const Academy = () => {
 
                   <div className="text-left space-y-1">
                     <h4 className="font-semibold text-sm">Key Achievements:</h4>
-                    {coach.achievements.map((achievement, idx) => (
+                    {coach.achievements.slice(0, 3).map((achievement, idx) => (
                       <div key={idx} className="text-xs text-muted-foreground">
                         • {achievement}
                       </div>
                     ))}
+                    {coach.achievements.length > 3 && (
+                      <div className="text-xs text-accent">
+                        +{coach.achievements.length - 3} more achievements
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>

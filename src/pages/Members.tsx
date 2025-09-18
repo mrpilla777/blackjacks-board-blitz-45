@@ -16,7 +16,7 @@ const Members = () => {
       level: "Expert",
       achievements: ["Club Leadership Excellence", "Strategic Development"],
       international: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "Lezerick Cunningham",
@@ -24,7 +24,7 @@ const Members = () => {
       level: "Expert",
       achievements: ["Administrative Leadership", "Community Development"],
       national: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "Willmore Pieterson",
@@ -32,7 +32,7 @@ const Members = () => {
       level: "Expert",
       achievements: ["Tournament Coordination", "Member Development"],
       national: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     }
   ];
 
@@ -45,34 +45,34 @@ const Members = () => {
       achievements: ["Cape Town League Champion", "Regional Master"],
       team: "A",
       international: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "JM Raynier Claassen",
-      role: "Junior Master",
+      role: "Junior Master", 
       level: "Junior Master",
       achievements: ["Club Champion", "Tournament Winner"],
       team: "A",
       national: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "RM Tezihano Mnyasta",
       role: "Regional Master",
-      level: "Regional Master",
+      level: "Regional Master", 
       achievements: ["Regional Tournament Winner", "Club Champion"],
       team: "A",
       national: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "RM Michael James",
       role: "Regional Master",
       level: "Regional Master",
       achievements: ["Regional Competitor", "Tournament Winner"],
-      team: "A",
+      team: "A", 
       national: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "JNM Jiraan Braaf",
@@ -81,7 +81,7 @@ const Members = () => {
       achievements: ["Western Cape U18 Champion", "National Representative"],
       team: "A",
       international: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "Cherwin Chanson Kleinsmidt",
@@ -90,16 +90,16 @@ const Members = () => {
       achievements: ["A Team Regular", "Tournament Competitor"],
       team: "A",
       national: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "Jamie Morne Geduld",
       role: "Team Player",
-      level: "Expert",
+      level: "Expert", 
       achievements: ["A Team Regular", "Tactical Specialist"],
       team: "A",
       national: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "Sean Kudzai Chironda",
@@ -108,7 +108,7 @@ const Members = () => {
       achievements: ["A Team Regular", "Tactical Specialist"],
       team: "A",
       national: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "Clayden Taute",
@@ -118,37 +118,37 @@ const Members = () => {
       team: "A",
       teamNote: "Also in B Team",
       national: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "Llewellyn Theod Louw",
       role: "President",
       level: "Expert",
       achievements: ["Club Leadership Excellence", "Strategic Development"],
-      team: "A",
+      team: "A", 
       teamNote: "Also in B Team",
       international: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
-      name: "Victor Meiring",
+      name: "Victor Meiring", 
       role: "Team Player",
       level: "Expert",
       achievements: ["A Team Regular", "Multi-team Player"],
       team: "A",
       teamNote: "Also in B Team",
       national: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "Willmore Pietersen",
-      role: "Vice President",
+      role: "Vice President", 
       level: "Expert",
       achievements: ["Tournament Coordination", "Member Development"],
       team: "A",
-      teamNote: "Also in B Team",
+      teamNote: "Also in B Team", 
       national: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "Theodor Thys Mentoor",
@@ -158,17 +158,17 @@ const Members = () => {
       team: "A",
       teamNote: "Also in B Team",
       national: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "Rudy Trevor Koopstadt",
       role: "Team Player",
-      level: "Expert",
+      level: "Expert", 
       achievements: ["A Team Regular", "Multi-team Player"],
       team: "A",
       teamNote: "Also in B Team",
       national: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "Warren Galant",
@@ -177,18 +177,18 @@ const Members = () => {
       achievements: ["A Team Regular", "Tournament Competitor"],
       team: "A",
       national: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "Ettiene Kapp",
-      role: "Team Player",
+      role: "Team Player", 
       level: "Expert",
       achievements: ["A Team Regular", "Tournament Competitor"],
       team: "A",
       national: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
-    // B Team Players (additional to A team)
+    // B Team Players  
     {
       name: "Lezerick Cunningham",
       role: "Chairperson",
@@ -197,46 +197,46 @@ const Members = () => {
       team: "B",
       teamNote: "Also in C Team",
       national: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "Shaheed Tobias",
-      role: "Team Player",
+      role: "Team Player", 
       level: "Class A Player",
       achievements: ["B Team Regular", "Tournament Player"],
       team: "B",
       club: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "Donvito Mintoor",
       role: "Team Player",
-      level: "Class A Player",
+      level: "Class A Player", 
       achievements: ["B Team Regular", "Multi-team Player"],
       team: "B",
       teamNote: "Also in C Team",
       club: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
-      name: "Jovanne Herder",
+      name: "Jovanne Herder", 
       role: "Team Player",
       level: "Class A Player",
       achievements: ["B Team Regular", "Multi-team Player"],
       team: "B",
       teamNote: "Also in C Team",
       club: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "Prince Ngombo",
       role: "Team Player",
       level: "Class A Player",
       achievements: ["B Team Captain", "Multi-team Player"],
-      team: "B",
+      team: "B", 
       teamNote: "Also in C Team",
       club: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "Mziwandile Links",
@@ -246,17 +246,17 @@ const Members = () => {
       team: "B",
       teamNote: "Also in C Team",
       club: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "Keenan Pharo",
       role: "Team Player",
-      level: "Class A Player",
+      level: "Class A Player", 
       achievements: ["B Team Regular", "Multi-team Player"],
       team: "B",
       teamNote: "Also in C Team",
       club: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "David Renyele",
@@ -265,9 +265,9 @@ const Members = () => {
       achievements: ["B Team Regular", "Tournament Player"],
       team: "B",
       club: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
-    // C Team Players (additional to B team)
+    // C Team Players
     {
       name: "Elihle Nzimande",
       role: "Team Player",
@@ -275,16 +275,16 @@ const Members = () => {
       achievements: ["C Team Regular", "Rising Talent"],
       team: "C",
       club: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "Keshe Fillies",
-      role: "Team Player",
+      role: "Team Player", 
       level: "Class B Player",
       achievements: ["C Team Regular", "Youth Development"],
       team: "C",
       club: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "Mboyo Belesi Pengele",
@@ -293,16 +293,16 @@ const Members = () => {
       achievements: ["C Team Regular", "Training Excellence"],
       team: "C",
       club: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "Naydene Williams",
       role: "Team Player",
-      level: "Class B Player",
+      level: "Class B Player", 
       achievements: ["C Team Regular", "Consistent Performance"],
       team: "C",
       club: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "Davian Mintoor",
@@ -311,7 +311,7 @@ const Members = () => {
       achievements: ["C Team Regular", "Youth Talent"],
       team: "C",
       club: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "Fabian Botes",
@@ -320,16 +320,16 @@ const Members = () => {
       achievements: ["C Team Regular", "Developing Player"],
       team: "C",
       club: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     },
     {
       name: "Believe Pengele",
       role: "Team Player",
       level: "Class B Player",
-      achievements: ["Rising Talent", "Youth Development"],
+      achievements: ["Rising Talent", "Youth Development"], 
       team: "C",
       club: true,
-      image: "/placeholder.svg"
+      image: "/blackjacks-logo.png"
     }
   ];
 
@@ -418,10 +418,10 @@ const Members = () => {
                   <div className="text-center">
                     <div className="relative mb-4">
                       <div className="w-32 h-32 mx-auto rounded-full bg-muted border-2 border-accent overflow-hidden">
-                        <img
-                          src={member.image}
-                          alt={member.name}
-                          className="w-full h-full object-cover"
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-full h-full object-contain p-2"
                         />
                       </div>
                       
@@ -497,9 +497,9 @@ const Members = () => {
                     <div className="relative mb-4">
                       <div className="w-20 h-20 mx-auto rounded-full bg-muted border-2 border-border overflow-hidden">
                         <img
-                          src={member.image || "/placeholder.svg"}
+                          src={member.image || "/blackjacks-logo.png"}
                           alt={member.name}
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-contain p-2"
                         />
                       </div>
                       
